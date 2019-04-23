@@ -1,0 +1,32 @@
+package com.biz.menu.model;
+
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+import lombok.ToString;
+
+/*
+ * 데이터를 담아서 이동시킬때 사용할 클래스들
+ *  vo class
+ *  dto class
+ * model 클래스
+ * command 클래스
+ * vo 클래스
+ */
+
+// menuDto를 빌더형식으로 만들어달라고 선언한것
+@Builder
+@Setter
+@Getter
+@NoArgsConstructor
+@AllArgsConstructor
+@ToString
+public class MenuDto {
+	
+	String menu_id;
+	String menu_title;
+	String menu_href;	
+	
+}
